@@ -1,0 +1,14 @@
+https://github.com/ananth949157/Assignment_Mapreduce.git	
+home/cloudera/MapReduce/Assignment_Mapreduce/Sample_Data.txt
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar -files Assignment_Mapper.py,Assignment_Reducer.py -input /
+
+
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+-files Assignment_Mapper.py,Assignment_reducer.py \
+-input /user/cloudera/Mapreduce/Sample_Data.txt \
+-output /user/cloudera/output \
+-mapper "python Assignment_Mapper.py" \
+-reducer "python Assignment_Reducer.py" 
+
+
+https://github.com/ananth949157/Items.git
